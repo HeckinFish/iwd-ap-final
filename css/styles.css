@@ -84,7 +84,7 @@ br {
 	}
 	
 	nav li:hover {
-		background-image: linear-gradient(to bottom right, #FEFFD4, #F5CA59);
+		background-color: #BA2121;
 	}
 	
 	nav li a {
@@ -105,7 +105,7 @@ br {
 	}
 	
 	#main-text {
-		background-color: #FEFFD4;
+		background-image: linear-gradient(to bottom right, #FFED94, #FEFFD4);
 	}
 	
 	#paw-1 {
