@@ -1,0 +1,191 @@
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+}
+
+
+
+/* Hide desktop and tablet, display mobile */
+.desk-tab {
+	display: none;
+}
+
+.mobile-nav {
+	display: block;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #851717;
+}
+
+p, h1 {
+	color: #DF6A0F;
+	font-family: "Bebas Neue", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.8em;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 3em;
+	text-align: center;
+}
+
+#main-text {
+	padding: 2%;
+	margin: 1%;
+}
+
+br {
+	border: 3px solid #DF6A0F;
+	padding: 1%;
+}
+
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+	
+	/* Hide mobile, display desktop and tablet */
+	.desk-tab {
+		display: block;
+	}
+
+	.mobile-nav {
+		display: none;
+	}
+	
+	#container {
+		background-color: #851717;
+	}
+	
+	/* Nav rules */
+	nav {
+		padding: 3% 0;
+		margin: 0;
+		width: 100%;
+		float: center;
+	}
+	
+	nav ul {
+		list-style-type: none;
+		text-align: center;
+	}
+	
+	nav li {
+		font-size: 3.2em;
+		display: inline-block;
+	}
+	
+	nav li:hover {
+		background-image: linear-gradient(to bottom right, #FEFFD4, #F5CA59);
+	}
+	
+	nav li a {
+		text-decoration: none;
+		display: block;
+		padding: 0.1em 0.5em;
+		color: #FBF180;
+	}
+	
+	nav li a:hover {
+		color: #FEB54A;
+
+	}
+	
+	img {
+		max-width: 100%;
+		display: block;
+	}
+	
+	#main-text {
+		background-color: #FEFFD4;
+	}
+	
+	#paw-1 {
+		float: left;
+		width: 50px;
+		margin: 3% 0;
+		margin-left: 25%;
+		transition: width 0.5s;
+	}
+	
+	#paw-2 {
+		float: right;
+		width: 50px;
+		margin: 3% 0;
+		margin-right: 25%;
+		transition: width 0.5s;
+	}
+	
+	#paw-1:hover {
+		width: 60px;
+	}
+	
+	#paw-2:hover {
+		width: 60px;
+	}
+	
+	.grid {
+		
+	}
+	
+	.frame {
+		
+	}
+	
+	.frame-img {
+		width: 400px;
+		border: 6px solid #FAE67B;
+		transition: width 0.5s;
+	}
+	
+	.frame-img:hover {
+		width: 420px;
+	}
+	
+	.fig-text {
+		border: none;
+		color: #DF6A0F;
+		text-align: center;
+		font-family: "Bebas Neue", sans-serif;
+		font-weight: 400;
+		font-style: bold;
+		font-size: 3em;
+	}
+	
+		.grid {
+			display: grid;
+			grid-template-columns: auto auto auto;
+			grid-gap: 20px;
+	}
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print {
+	
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+	
+		#container {
+			width: 1920px;
+			margin: 0 auto;
+	}
+
+	table {
+			width: 80%;
+	}
+}
+
+/* Media Query for Print */
+@media print {
+	
+}
