@@ -141,13 +141,13 @@ br {
 	}
 	
 	.frame-img {
-		width: 400px;
+		width: 450px;
 		border: 6px solid #FAE67B;
 		transition: width 0.5s;
 	}
 	
 	.frame-img:hover {
-		width: 420px;
+		width: 470px;
 	}
 	
 	.fig-text {
