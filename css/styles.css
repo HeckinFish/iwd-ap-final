@@ -1,5 +1,5 @@
 /* CSS Reset */
-body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video {
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video, button {
 		margin: 0;
 		padding: 0;
 		border: 0;
@@ -78,7 +78,7 @@ br {
 		text-align: center;
 	}
 	
-	nav li {
+	nav li, .drop-btn {
 		font-size: 3.2em;
 		display: inline-block;
 	}
@@ -164,6 +164,15 @@ br {
 			display: grid;
 			grid-template-columns: auto auto auto;
 			grid-gap: 20px;
+	}
+	
+	.drop {
+		float: left;
+		overflow: hidden;
+	}
+	
+	.drop-links {
+		
 	}
 }
 
