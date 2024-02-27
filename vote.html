@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--Amanda Postma 2/21/24 -->
+<html lang="en">
+<head>
+	<title>Template</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dhurjati&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="container">
+
+		<!-- Mobile Nav -->
+		<nav class="mobile-nav">
+			<div id="mobile-links">
+				<a href="index.html">Home</a>
+				<a href="vote.html">Vote</a>
+			</div>
+		</nav>
+		
+		<div id="paw-1" class="desk-tab">
+			<img src="images/logo1.png" alt="Graphic of a cat paw">
+		</div>
+		<div id="paw-2" class="desk-tab">
+			<img src="images/logo2.png" alt="Graphic of a cat paw">
+		</div>
+		
+		<!-- Desktop Nav -->
+		<nav class="desk-tab">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="vote.html">Vote</a></li>
+			</ul>
+		</nav>
+		
+		<div id="form">
+		
+			<div id="info">
+				<h1>Cast your vote</h1>
+			</div>
+			
+			<div class="form-grid">
+		
+				<fieldset>
+					<legend>Info</legend>
+					<label for="fName">First Name:</label>
+					<input type="text" name="fName" id="fName" required>
+					
+					<label for="lName">Last Name:</label>
+					<input type="text" name="lName" id="lName" required>
+					
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" required>
+					
+				</fieldset>
+				<fieldset>
+					<legend>I will be voting for:</legend>
+		
+					<label for="koda"><input type="radio" name="vote" id="koda" value="Koda">Koda</label>
+					
+					<label for="kosmo"><input type="radio" name="vote" id="kosmo" value="Kosmo">Kosmo</label>
+					
+					<label for="nutr"><input type="radio" name="vote" id="kinni" value="Kinni">Kinni</label>
+				</fieldset>
+				<fieldset>
+					<label for="reason">Reason for choice</label>
+					<textarea id="reason" name="reason" rows="5" cols="35"></textarea>
+				</fieldset>
+				
+				</div>
+				
+				<input type="submit" id="submit" value="Submit" class="btn">
+		
+		</div>
+		
+	</div>
+</body>
+</html>

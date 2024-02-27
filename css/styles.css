@@ -42,7 +42,7 @@ p, h1, h2 {
 	padding: 0.5%;
 }
 
-h1 {
+h1, legend {
 	font-weight: bold;
 	font-size: 3em;
 	text-align: center;
@@ -57,6 +57,64 @@ h2 {
 #main-text {
 	padding: 2%;
 	margin: 1%;
+}
+
+#info {
+	background-color: #FFFBDF;
+	padding: 0.5% 1%;
+	margin: 2% 0;
+	text-align: center;
+}
+
+#info-desc {
+	font-size: 1.5em;
+}
+
+/* Form Rules */
+
+#form {
+	margin-top: 2%;
+	background-image: linear-gradient(to bottom right, #FFED94, #FEFFD4);
+	padding: 1%;
+	color: #DF6A0F;
+	font-family: "Bebas Neue", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.5em;
+}
+
+#form h1 {
+	text-align: center;
+	font-size: 2.5em;
+}
+
+fieldset, input, select, textarea {
+	margin-bottom: 1%;
+	background-color: #FFFBDF;
+}
+
+fieldset legend {
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+label {
+		display: block;
+		padding-top: 1%;
+}
+
+#submit {
+	margin: 1% auto;
+	border: none;
+	display: block;
+	padding: 1.5% 2%;
+	background-color: #851717;
+	color: #F8EA7D;
+	font-size: 1.5em;
+	font-family: "Bebas Neue", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	border-radius: 10px;
 }
 
 
@@ -78,7 +136,6 @@ h2 {
 		padding: 3% 0;
 		margin: 0;
 		width: 100%;
-		float: center;
 	}
 	
 	nav ul {
@@ -145,6 +202,11 @@ h2 {
 		border-radius: 50%;
 		display: block;
 		margin: 0 auto;
+		width: 300px;
+		transition: width 0.5s;
+	}
+	.contestant-profile:hover {
+		width: 320px;
 	}
 	
 	.contestant-img {
@@ -152,17 +214,6 @@ h2 {
 		margin: 2%;
 		display: block;
 		margin: auto;
-	}
-	
-	#contestant-info {
-		background-color: #FFFBDF;
-		padding: 0.5% 1%;
-		margin: 2% 0;
-		text-align: center;
-	}
-	
-	#cont-desc {
-		font-size: 1.5em;
 	}
 	
 	#main-text, main {
@@ -189,6 +240,10 @@ h2 {
 		list-style-type: none;
 	}
 	
+	.stat {
+		color: #fff;
+	}
+	
 	.stat-p {
 		color: #fff;
 		font-size: 2em;
@@ -201,10 +256,6 @@ h2 {
 	
 	article:nth-of-type(2) {
 		background-color: #DE5D1F;
-	}
-	
-	.frame {
-		
 	}
 	
 	.frame-img {
@@ -223,12 +274,18 @@ h2 {
 		text-align: center;
 		font-family: "Bebas Neue", sans-serif;
 		font-weight: 400;
-		font-style: bold;
 		font-size: 3em;
 	}
 	
 	#container {
 		background-color: #851717;
+	}
+	
+	.form-grid {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 10px;
+		margin: 0 2%;
 	}
 }
 
