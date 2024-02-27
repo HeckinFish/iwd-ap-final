@@ -88,9 +88,14 @@ h2 {
 	font-size: 2.5em;
 }
 
-fieldset, input, select, textarea {
+fieldset, select {
 	margin-bottom: 1%;
 	background-color: #FFFBDF;
+}
+
+textarea, input {
+	margin-bottom: 1%;
+	background-color: #fff;
 }
 
 fieldset legend {
@@ -116,6 +121,24 @@ label {
 	font-style: normal;
 	border-radius: 10px;
 }
+
+#main-text, main {
+	background-image: linear-gradient(to bottom right, #FFED94, #FEFFD4);
+	overflow: auto;
+}
+
+	.fig-text {
+		border: none;
+		color: #DF6A0F;
+		text-align: center;
+		font-family: "Bebas Neue", sans-serif;
+		font-weight: 400;
+		font-size: 3em;
+	}
+	
+	#container {
+		background-color: #851717;
+	}
 
 
 /* Media Query for Tablet Viewport */
@@ -216,11 +239,6 @@ label {
 		margin: auto;
 	}
 	
-	#main-text, main {
-		background-image: linear-gradient(to bottom right, #FFED94, #FEFFD4);
-		overflow: auto;
-	}
-	
 	.grid {
 		display: grid;
 		grid-template-columns: auto auto auto;
@@ -266,19 +284,6 @@ label {
 	
 	.frame-img:hover {
 		width: 470px;
-	}
-	
-	.fig-text {
-		border: none;
-		color: #DF6A0F;
-		text-align: center;
-		font-family: "Bebas Neue", sans-serif;
-		font-weight: 400;
-		font-size: 3em;
-	}
-	
-	#container {
-		background-color: #851717;
 	}
 	
 	.form-grid {
