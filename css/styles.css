@@ -33,7 +33,7 @@ img {
 
 /* Text styles */
 
-p, h1, h2 {
+p, h1, h2, #words {
 	color: #DF6A0F;
 	font-family: "Oswald", sans-serif;
 	font-weight: 400;
