@@ -33,7 +33,7 @@ img {
 
 /* Text styles */
 
-p, h1, h2, #words {
+p, h1, h2, #words, #alert {
 	color: #DF6A0F;
 	font-family: "Oswald", sans-serif;
 	font-weight: 400;
@@ -279,7 +279,12 @@ label {
 		background-color: #FF944D;
 		margin: 1% 0 2%;
 	}
-
+	
+	.surprise:hover {
+		background-color: #DE5D1F;
+		width: 350px;
+		height: 100px;
+	}
 	
 	.stat {
 		color: #fff;
@@ -314,6 +319,24 @@ label {
 		grid-template-columns: auto auto auto;
 		grid-gap: 10px;
 		margin: 0 2%;
+	}
+	
+	#alert {
+		text-align: center;
+		display: block;
+		margin: 2% auto;
+		background-color: darkred;
+		color: white;
+		height: 400px;
+		width: 850px;
+		padding: 2%;
+	}
+	
+	#close {
+		color: white;
+		text-decoration: none;
+		background-color: red;
+		padding: .5% 1%;
 	}
 }
 
