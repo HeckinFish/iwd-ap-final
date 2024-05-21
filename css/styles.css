@@ -365,6 +365,42 @@ label {
 	#clickpop p {
 		color: white;
 	}
+	
+	.accordion {
+		padding: 5px 0 20px 0;
+		text-align: left;
+		list-style: none;
+	}
+	
+	.acc-control {
+		background-color: #DE5D1F;
+		color: #fff;
+		cursor: pointer;
+		padding: 10px;
+		font-size: 1.5em;
+		font-family: "Oswald", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		width: 100%;
+		transition: 0.5s;
+	}
+	
+	.active, .acc-control:hover {
+		background-color: #FF944D;
+	}
+	
+	.acc-panel {
+		display: none;
+		padding: 20px;
+		overflow: hidden;
+		background-color: #FF944D;
+		font-size: 1.5em;
+		font-family: "Oswald", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		text-align: center;
+		color: #b34803;
+	}
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1015px), print {
