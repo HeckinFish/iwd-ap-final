@@ -401,7 +401,71 @@ label {
 		text-align: center;
 		color: #b34803;
 	}
-
+	
+	/* Gallery */
+	
+	.row {
+		margin: 10px -16px;
+	}
+	
+	.row,
+	.row > .column {
+		padding: 5px;
+	}
+	
+	.column {
+		float: left;
+		width: 33.33%;
+		display: none;
+	}
+	
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	
+	.show {
+		display: block;
+	}
+	
+	#buttons {
+		display: block;
+		margin: auto;
+		padding: 2%;
+	}
+	
+	.cont {
+		padding: 5px;
+	}
+	
+	.cont img {
+		border: 3px solid white;
+	}
+	
+	.btn {
+		border: none;
+		border-radius: 10%;
+		outline: none;
+		padding: 2%;
+		background-color: #FF944D;
+		color: #fff;
+		cursor: pointer;
+		font-size: 1.5em;
+		font-family: "Oswald", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+	}
+	
+	.btn:hover {
+		background-color: #DE5D1F;
+	}
+		
+	.btn.active {
+		background-color: #BA2121;
+		color: #fff;
+	}
+		
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1015px), print {
 	

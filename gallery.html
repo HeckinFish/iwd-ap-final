@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--Amanda Postma 2/21/24 -->
+<html lang="en">
+<head>
+	<title>Template</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dhurjati&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="container">
+
+		<!-- Mobile Nav -->
+		<nav class="mobile-nav">
+			<div id="mobile-links">
+				<a href="index.html">Home</a>
+				<a href="vote.html">Vote</a>
+			</div>
+		</nav>
+		
+		<div id="paw-1" class="desk-tab">
+			<img src="images/logo1.png" alt="Graphic of a cat paw">
+		</div>
+		<div id="paw-2" class="desk-tab">
+			<img src="images/logo2.png" alt="Graphic of a cat paw">
+		</div>
+		
+		<!-- Desktop Nav -->
+		<nav class="desk-tab">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li>
+					<a href="#">Contestants</a>
+					<ul class="dropdown">
+						<li><a href="koda.html">Koda</a></li>
+						<li><a href="kosmo.html">Kosmo</a></li>
+						<li><a href="kinni.html">Kinni</a></li>
+					</ul>
+				</li>
+				<li><a href="vote.html">Vote</a></li>
+			</ul>
+		</nav>
+		
+		<main>
+		
+			<div id="info">
+			
+				<div id="buttons">
+					<button class="btn active" onclick="filterSelection('all')">All</button>
+					<button class="btn" onclick="filterSelection('koda')">Koda</button>
+					<button class="btn" onclick="filterSelection('kosmo')">Kosmo</button>
+					<button class="btn" onclick="filterSelection('kinni')">Kinni</button>
+				</div>
+				
+				<div class="row">
+					<div class="column koda">
+						<div class="cont">
+							<img src="images/gallery/koda1.jpg" alt="Koda in a box" style="width:100%"/>
+						</div>
+						<div class="cont">
+							<img src="images/gallery/koda2.jpg" alt="Koda sitting politely" style="width:100%"/>
+						</div>
+						<div class="cont">
+							<img src="images/gallery/koda3.jpg" alt="Koda getting swatted on the head by Kosmo" style="width:100%"/>
+						</div>
+					</div>
+					<div class="column kosmo">
+						<div class="cont">
+						<img src="images/gallery/kosmo1.jpg" alt="Kosmo laying next to Koda who is sleeping in a box" style="width:100%"/>
+						</div>
+						<div class="cont">
+							<img src="images/gallery/kosmo2.jpg" alt="Kosmo laying on his back" style="width:100%"/>
+						</div>
+						<div class="cont">
+							<img src="images/gallery/kosmo3.png" alt="Kosmo laying belly up on the floor" style="width:100%"/>
+						</div>
+					</div>
+					<div class="column kinni">
+						<div class="cont">
+							<img src="images/gallery/kinni1.jpg" alt="Kinni stretching out her legs" style="width:100%"/>
+						</div>
+						<div class="cont">
+							<img src="images/gallery/kinni2.jpg" alt="Kinni balancing on a cardboard box" style="width:100%"/>
+						</div>
+						<div class="cont">
+							<img src="images/gallery/kinni4.jpg" alt="Kinni licking my finger after biting me" style="width:100%"/>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+		
+		</main>
+		
+	</div>
+	<script src="scripts/filter.js"></script>
+</body>
+</html>
