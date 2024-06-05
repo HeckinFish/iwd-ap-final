@@ -43,7 +43,7 @@
 			</ul>
 		</nav>
 		
-		<div id="form">
+		<form id="form" name="form" onsubmit="formValid()">
 		
 			<div id="info">
 				<h1>Cast your vote</h1>
@@ -53,14 +53,14 @@
 		
 				<fieldset>
 					<legend>Info</legend>
-					<label for="fName">First Name:</label>
-					<input type="text" name="fName" id="fName" required>
+					<label class="inputf" for="fName">First Name:</label>
+					<input type="text" name="fName" id="fName">
 					
 					<label for="lName">Last Name:</label>
-					<input type="text" name="lName" id="lName" required>
+					<input type="text" name="lName" id="lName">
 					
 					<label for="email">Email:</label>
-					<input type="email" name="email" id="email" required>
+					<input type="email" name="email" id="email">
 					
 				</fieldset>
 				<fieldset>
@@ -80,16 +80,18 @@
 				</div>
 				
 				<input type="submit" id="submit" value="Submit" class="btn">
+			</form>
 				
-				<div id="info">
-					<p>Vote now and recieve exclusive content of your favorite candidate!</p>
-					<p id="offerEnds"></p>
-				<div>
+			<div id="info">
+				<p>Vote now and recieve exclusive content of your favorite candidate!</p>
+				<p id="offerEnds"></p>
+			<div>
 		
 		</div>
 		
 	</div>
 	<script src="scripts/offer.js"></script>
 	<script src="scripts/store.js"></script>
+	<script src="scripts/validate.js"></script>
 </body>
 </html>
